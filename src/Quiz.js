@@ -1,35 +1,28 @@
 import React, { Component } from 'react';
+
+import {
+    Link
+} from 'react-router-dom'
+
 import TechnicalQuiz from './TechnicalQuiz';
 
 class Quiz extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
+
+        console.dir(props.match.params.questionIndex);
 
         this.state = {
             quiz: TechnicalQuiz,
-            questionIndex: 0
+            questionIndex: parseInt(props.match.params.questionIndex, 10)
         };
-    }
-
-    nextQuestion = () => {
-        this.setState((prevState, props) => {
-            return {
-                questionIndex: prevState.questionIndex + 1
-            }
-        });
-    }
-
-    completeQuiz = () => {
-        this.setState((prevState, props) => {
-            return {
-                questionIndex: prevState.questionIndex + 1
-            }
-        });
     }
 
     render() {
         const index = this.state.questionIndex;
+        const nextIndex = index + 1;
         const question = this.state.quiz[index];
+
         const answers = question.answers.map(answer => {
             return (
                 <div className="multiple-choice form-group" key={answer.index}>
@@ -39,6 +32,31 @@ class Quiz extends Component {
             );
         });
 
+        const isLastQuestion = nextIndex === this.state.quiz.length;
+
+        console.log('len', this.state.quiz.length);
+        console.log('index', index);
+        console.log('nextIndex', index);
+        console.log('last?', isLastQuestion);
+
+        const nextButton =
+            <div className="clearfix">
+                <Link to={`/quiz/${nextIndex}`}>
+                    <button className="button">Next</button>
+                </Link>
+            </div>;
+
+        const finishButton =
+            <div className="clearfix">
+                <Link to={`/quiz/${nextIndex}`}>
+                    <button className="button">Finish</button>
+                </Link>
+            </div>;
+
+        const button = isLastQuestion ?
+            finishButton :
+            nextButton;
+
         return (
             <div>
                 <h1 className="heading-large">
@@ -46,9 +64,7 @@ class Quiz extends Component {
                 </h1>
                 <form>
                     {answers}
-                    <div className="clearfix">
-                        <button className="button" onClick={this.nextQuestion}>Next</button>
-                    </div>
+                    {button}
                 </form>
             </div>
         );

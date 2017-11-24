@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 
 import {
   BrowserRouter as Router,
-  Route,
-  Link
+  Route
 } from 'react-router-dom'
 
 import './App.css';
@@ -16,10 +15,8 @@ class App extends Component {
       <div>
         <Router>
           <div>
-            
             <Route exact path='/' component={Start} />
-            <Route path='/quiz' component={Quiz} />
-            
+            <Route path='/quiz/:questionIndex' component={Quiz} />
           </div>
         </Router>
       </div>
