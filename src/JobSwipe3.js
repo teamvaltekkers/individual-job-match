@@ -18,13 +18,19 @@ class JobSwipe3 extends Component {
             <div className="swipe-control">
                 <div className="card">
                     <div className="card__header">
-                        <h3 className="job-title">Technical Engineer</h3>
+                        <h3 className="job-title">Senior SharePoint Consultant</h3>
                         <span className="job-location">Aldershot, Hampshire</span>
                         <span className="job-salary">Up to £40,000 (Dependent on Experience) + Extensive Benefits Package </span>
                     </div>
                     <div className="card__body">
-                        <p>Our client is a global provider of technology systems and solutions across the entire insurance industry. They provide core technology solutions, distribution and trading capability, advanced analytics and solution delivery.</p>
-                        <p>Their team is growing, so our client is on the lookout for a talented Technical Engineer to join their Operations Team, based at their Aldershot office.</p>
+                        <p>The Senior SharePoint Consultant applies current graphics design and .NET technologies to develop, 
+                            modify, maintain SharePoint server portals and Office 365 (O365) tenants. Design, develop, and 
+                            manage site content and capabilities and provide daily onsite maintenance of the existing 
+                            SharePoint/O365 portals. Participates in the testing process through test review and analysis, 
+                            test witnessing and certification of software. Familiar with Global Pharmaceutical standard 
+                            concepts, practices, and procedures will be desired. Relies on experience and judgment to plan 
+                            and accomplish goals. Work with project stakeholders on a daily basis. A certain degree of 
+                            creativity and latitude is required.</p>
                     </div>
                 </div>
 
