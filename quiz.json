@@ -1,17 +1,24 @@
-{
-    "1": {
-        "Q1": "1?",
-        "yes": "1.2",
-        "no": "1.3"
-    },
-    "1.2": {
-        "Q1": "1.2?",
-        "yes": "1.2",
-        "no": "1.3"
-    },
-    "1.3": {
-        "Q1": "1.3?",
-        "yes": "1.2",
-        "no": "1.3"
+[
+    {
+        "question": "Which of the following is least like the others?",
+        "answers": [
+            {
+                "index": "A",
+                "answer": "cube"
+            },
+            {
+                "index": "B",
+                "answer": "sphere"
+            },
+            {
+                "index": "C",
+                "answer": "pyramid"
+            },
+            {
+                "index": "D",
+                "answer": "circle"
+            }
+        ],
+        "correctAnswer": "D"
     }
-}
+]
