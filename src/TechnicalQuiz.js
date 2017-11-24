@@ -1,4 +1,4 @@
-[
+export default [
     {
         "question": "Which of the following is least like the others?",
         "answers": [
@@ -21,4 +21,4 @@
         ],
         "correctAnswer": "D"
     }
-]
+];
