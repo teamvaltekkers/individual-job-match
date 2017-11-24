@@ -8,7 +8,7 @@ class Profile extends Component {
     render() {
         return (
             <div>
-                <h1 class="heading-large">Travel</h1>
+                <h1 className="heading-large">Travel</h1>
                 
                 <div className="form-group">
                     <label className="form-label" htmlFor="location">
@@ -19,7 +19,7 @@ class Profile extends Component {
                     </label>
                     <input className="form-control" id="location" type="text" name="location" />
                 </div>
-                
+
                 <div className="form-group">
                 <fieldset>
                     <legend className="form-label-bold">How far are you willing to travel to work?</legend>
