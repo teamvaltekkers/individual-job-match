@@ -8,6 +8,7 @@ import {
 
 import './App.css';
 import Quiz from './Quiz';
+import Start from './Start';
 
 class App extends Component {
   render() {
@@ -16,11 +17,12 @@ class App extends Component {
         <header>
           <h1 >Welcome to Individual Talent Match</h1>
         </header>
-        <p>
-          TODO
-        </p>
         <Router>
-          <Route path='/' component={Quiz} />
+          <div>
+            <Link to='/quiz'>Quiz</Link>
+            <Route exact path='/' component={Start} />
+            <Route path='/quiz' component={Quiz} />
+          </div>
         </Router>
       </div>
     );

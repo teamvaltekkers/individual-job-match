@@ -34,7 +34,7 @@ class Quiz extends Component {
             return (
                 <div className="multiple-choice form-group" key={answer.index}>
                     <input id={answer.index} type="radio" name="radio-group" value={answer.index} />
-                    <label for={answer.index}>{answer.index} - {answer.answer}</label>
+                    <label htmlFor={answer.index}>{answer.index} - {answer.answer}</label>
                 </div>
             );
         });
