@@ -8,7 +8,7 @@ class Summary extends Component {
     render() {
         return (
             <div>
-                <h1 class="heading-large">Talent Match Completed</h1>
+                <h1 className="heading-large">Talent Match Completed</h1>
 
                 <p>We now need to help you find your perfect match. Can you give us a few more details around your ideal job?</p>
 
