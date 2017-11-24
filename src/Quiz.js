@@ -33,7 +33,8 @@ class Quiz extends Component {
         const answers = question.answers.map(answer => {
             return (
                 <div className="multiple-choice form-group" key={answer.index}>
-                    {answer.index} - {answer.answer}
+                    <input id={answer.index} type="radio" name="radio-group" value={answer.index} />
+                    <label for={answer.index}>{answer.index} - {answer.answer}</label>
                 </div>
             );
         });
