@@ -11,6 +11,22 @@ class Quiz extends Component {
         };
     }
 
+    nextQuestion = () => {
+        this.setState((prevState, props) => {
+            return {
+                questionIndex: prevState.questionIndex + 1
+            }
+        });
+    }
+
+    completeQuiz = () => {
+        this.setState((prevState, props) => {
+            return {
+                questionIndex: prevState.questionIndex + 1
+            }
+        });
+    }
+
     render() {
         const index = this.state.questionIndex;
         const question = this.state.quiz[index];
@@ -30,6 +46,7 @@ class Quiz extends Component {
                 <div>
                     {answers}
                 </div>
+                <button onClick={this.nextQuestion}>Next</button>
             </div>
         );
     }

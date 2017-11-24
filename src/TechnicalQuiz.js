@@ -20,5 +20,27 @@ export default [
             }
         ],
         "correctAnswer": "D"
-    }
+    },
+    {
+        "question": "Question 2?",
+        "answers": [
+            {
+                "index": "A",
+                "answer": "cube"
+            },
+            {
+                "index": "B",
+                "answer": "sphere"
+            },
+            {
+                "index": "C",
+                "answer": "pyramid"
+            },
+            {
+                "index": "D",
+                "answer": "circle"
+            }
+        ],
+        "correctAnswer": "D"
+    }    
 ];
