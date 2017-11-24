@@ -20,3 +20,29 @@
 .card > [class*="__footer"] {
     border-top: 1px solid #ccc;
 }
+
+
+
+/* .swipe-control {
+    position: relative;
+}
+
+.swipe-control__left,
+.swipe-control__right {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    background-color: lime;
+}
+.swipe-control__left {
+    left: 0;
+} */
+
+.swipe-control__left {
+    float: left;
+}
+.swipe-control__right {
+    float: right;
+}

@@ -45,9 +45,18 @@ class JobSwipe extends Component {
         const job = this.job1();
 
         return (
-            <div>
+            <div className="swipe-control">
                 {job}
+  
+                    <a href="" className="swipe-control__left">
+                        Like
+                    </a>
+                    <a href="" className="swipe-control__right">
+                        Dislike
+                    </a>
+
             </div>
+            
         );
     }
 }
