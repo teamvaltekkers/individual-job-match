@@ -22,25 +22,26 @@ export default [
         "correctAnswer": "D"
     },
     {
-        "question": "Question 2?",
+        "question": `
+            Consider a language which uses the following set of characters:
+            Small set: { a b c }
+            Large set: { A B C }
+            Punctuation set: { x y }
+            This language must follow the following rules:
+            1. A punctuation character must end all series. 
+            2. A series can have up to but no more than 4 characters,including punctuation characters. 
+            Does the following series follow all the rules of the language defined above?
+        `,
         "answers": [
             {
                 "index": "A",
-                "answer": "cube"
+                "answer": "Yes"
             },
             {
                 "index": "B",
-                "answer": "sphere"
-            },
-            {
-                "index": "C",
-                "answer": "pyramid"
-            },
-            {
-                "index": "D",
-                "answer": "circle"
+                "answer": "No"
             }
         ],
-        "correctAnswer": "D"
-    }    
+        "correctAnswer": "A"
+    }
 ];
