@@ -43,9 +43,11 @@ class JobSwipe extends Component {
 
     render() {
         const job = this.job1();
-        
+
         return (
-            {job}
+            <div>
+                {job}
+            </div>
         );
     }
 }

@@ -68,7 +68,7 @@ class Profile extends Component {
                 </div>
 
                 <div>
-                    <Link to="/quiz/1" className="button">
+                    <Link to="/jobswipe" className="button">
                         Next
                     </Link>
                 </div>
