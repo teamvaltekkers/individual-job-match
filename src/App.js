@@ -9,6 +9,7 @@ import {
 import './App.css';
 import Quiz from './Quiz';
 import Start from './Start';
+import Profile from './Profile';
 
 class App extends Component {
   render() {
@@ -19,7 +20,7 @@ class App extends Component {
             
             <Route exact path='/' component={Start} />
             <Route path='/quiz' component={Quiz} />
-            
+            <Route path='/profile' component={Profile} />
           </div>
         </Router>
       </div>
