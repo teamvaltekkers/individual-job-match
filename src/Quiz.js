@@ -41,12 +41,12 @@ class Quiz extends Component {
 
         const finishButton =
             <div className="clearfix">
-                <Link to="/summary" className="button">
+                <Link to="/summary">
                     Finish
                 </Link>
             </div>;
 
-        const isLastQuestion = true;
+        const isLastQuestion = nextIndex === this.state.quiz.length;
 
         const button = isLastQuestion ?
             finishButton :
@@ -60,6 +60,8 @@ class Quiz extends Component {
                 <form>
                     {answers}
                     {button}
+                    <br />
+                    {finishButton}
                 </form>
             </div>
         );
