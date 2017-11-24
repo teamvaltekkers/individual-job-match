@@ -1,0 +1,22 @@
+.card {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 0.3em;
+}
+.card > [class*="__header"] {
+    border-bottom: 1px solid #ccc;
+}
+.card > [class*="__header"] > * {
+    margin-bottom: 0;
+}
+.card > [class*="__body"] > *:last-child {
+    margin-bottom: 0;
+}
+.card > [class*="__header"],
+.card > [class*="__body"],
+.card > [class*="__footer"] {
+    padding: 1.3em;
+}
+.card > [class*="__footer"] {
+    border-top: 1px solid #ccc;
+}
