@@ -11,6 +11,7 @@ import Quiz from './Quiz';
 import Start from './Start';
 import Profile from './Profile';
 import Summary from './Summary';
+import JobSwipe from './JobSwipe';
 
 class App extends Component {
   render() {
@@ -24,6 +25,7 @@ class App extends Component {
               <Route path='/quiz/:questionIndex' component={Quiz} />
               <Route path='/summary' component={Summary} />
               <Route path='/profile' component={Profile} />
+              <Route path='/jobswipe' component={JobSwipe} />
             </Switch>
           </div>
         </Router>
