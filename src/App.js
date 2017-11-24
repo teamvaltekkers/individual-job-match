@@ -14,14 +14,12 @@ class App extends Component {
   render() {
     return (
       <div>
-        <header>
-          <h1 >Welcome to Individual Talent Match</h1>
-        </header>
         <Router>
           <div>
-            <Link to='/quiz'>Quiz</Link>
+            
             <Route exact path='/' component={Start} />
             <Route path='/quiz' component={Quiz} />
+            
           </div>
         </Router>
       </div>

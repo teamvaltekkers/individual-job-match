@@ -13,7 +13,9 @@ class Start extends Component {
                 <p>The Talent Match is multiple choice.</p>
                 <p>Click the start button to begin.</p>
 
-                <Link to="/quiz/1" />
+                <Link to="/quiz/1" className="button button-start">
+                    Start
+                </Link>
             </div>
         );
     }
