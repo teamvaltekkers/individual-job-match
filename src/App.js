@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <div>
         <header>
-          <h1 >Welcome to Individual Job Match</h1>
+          <h1 >Welcome to Individual Talent Match</h1>
         </header>
         <p>
           TODO
