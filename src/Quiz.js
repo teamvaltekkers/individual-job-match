@@ -36,20 +36,20 @@ class Quiz extends Component {
 
         console.log('len', this.state.quiz.length);
         console.log('index', index);
-        console.log('nextIndex', index);
+        console.log('nextIndex', nextIndex);
         console.log('last?', isLastQuestion);
 
         const nextButton =
             <div className="clearfix">
-                <Link to={`/quiz/${nextIndex}`}>
-                    <button className="button">Next</button>
+                <Link to={`/quiz/${nextIndex}`} className="button">
+                    Next
                 </Link>
             </div>;
 
         const finishButton =
             <div className="clearfix">
-                <Link to={`/quiz/${nextIndex}`}>
-                    <button className="button">Finish</button>
+                <Link to={`/quiz/${nextIndex}`} className="button">
+                    Finish
                 </Link>
             </div>;
 
