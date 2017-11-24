@@ -32,7 +32,7 @@ class Quiz extends Component {
         const question = this.state.quiz[index];
         const answers = question.answers.map(answer => {
             return (
-                <div key={answer.index}>
+                <div className="multiple-choice form-group" key={answer.index}>
                     {answer.index} - {answer.answer}
                 </div>
             );
@@ -40,13 +40,15 @@ class Quiz extends Component {
 
         return (
             <div>
-                <div>
+                <h1 className="heading-large">
                     {question.question}
-                </div>
-                <div>
+                </h1>
+                <form>
                     {answers}
-                </div>
-                <button onClick={this.nextQuestion}>Next</button>
+                    <div className="clearfix">
+                        <button className="button" onClick={this.nextQuestion}>Next</button>
+                    </div>
+                </form>
             </div>
         );
     }
