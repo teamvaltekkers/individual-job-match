@@ -32,13 +32,6 @@ class Quiz extends Component {
             );
         });
 
-        const isLastQuestion = nextIndex === this.state.quiz.length;
-
-        console.log('len', this.state.quiz.length);
-        console.log('index', index);
-        console.log('nextIndex', nextIndex);
-        console.log('last?', isLastQuestion);
-
         const nextButton =
             <div className="clearfix">
                 <Link to={`/quiz/${nextIndex}`} className="button">
@@ -48,10 +41,12 @@ class Quiz extends Component {
 
         const finishButton =
             <div className="clearfix">
-                <Link to={`/quiz/${nextIndex}`} className="button">
+                <Link to="/summary" className="button">
                     Finish
                 </Link>
             </div>;
+
+        const isLastQuestion = true;
 
         const button = isLastQuestion ?
             finishButton :
